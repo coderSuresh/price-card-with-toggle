@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <title>Price Grid With Toggle</title>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main>
+        <h2 class="pricing">Our Pricing</h2>
+        <div class="switcher">
+            <p class="ann">Annually</p>
+            <label class="toggle" tabindex="-1">
+                <input type="checkbox" name="toggle" id="check" onclick="changePrice()" />
+                <div class="radio-button"></div>
+            </label>
+            <p class="mon">Monthly</p>
+        </div>
+
+        <div class="container">
+            <div class="card card-1">
+                <p class="title">Basic</p>
+                <h1 class="monthly-price price" id="monthly-price"><span>&dollar;</span>19.99</h1>
+                <h1 class="annual-price price" id="annual-price"><span>&dollar;</span>199.99</h1>
+                <ul>
+                    <li>500 GB Storage</li>
+                    <li>2 Users Allowed</li>
+                    <li>Send up to 3 GB</li>
+                </ul>
+
+                <a href="#" class="btn-learn btn">Learn More</a>
+            </div>
+
+            <div class="card card-2">
+                <p class="title title-2">Professional</p>
+                <h1 class="monthly-price price" id="monthly-price"><span>&dollar;</span>24.99</h1>
+                <h1 class="annual-price price" id="annual-price"><span>&dollar;</span>249.99</h1>
+                <ul>
+                    <li>1 TB Storage</li>
+                    <li>5 Users Allowed</li>
+                    <li>Send up to 10 GB</li>
+                </ul>
+
+                <a href="#" class="btn-learn btn-2 btn">Learn More</a>
+            </div>
+
+            <div class="card card-3">
+                <p class="title">Master</p>
+                <h1 class="monthly-price price" id="monthly-price"><span>&dollar;</span>39.99</h1>
+                <h1 class="annual-price price" id="annual-price"><span>&dollar;</span>399.99</h1>
+                <ul>
+                    <li>2 TB Storage</li>
+                    <li>10 Users Allowed</li>
+                    <li>Send up to 20 GB</li>
+                </ul>
+
+                <a href="#" class="btn-learn btn">Learn More</a>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
